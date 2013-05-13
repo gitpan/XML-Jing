@@ -49,7 +49,7 @@ sub pmver {
 }
 
 eval { $v .= pmver('Carp','any version') };
-eval { $v .= pmver('Config','any version') };
+eval { $v .= pmver('Env::Path','any version') };
 eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::ShareDir','any version') };
 eval { $v .= pmver('File::ShareDir::Install','0.03') };

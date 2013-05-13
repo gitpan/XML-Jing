@@ -1,0 +1,66 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 bdcea00315f4b751be9d6237c824979eedd32c33 Build.PL
+SHA1 0b0828b34152f4377f260784e637a1878d7a46e4 Changes
+SHA1 82e2a8ca991a452e14f1a44adb86efe52c29f7de INSTALL
+SHA1 4d7a909a641aef78cab40eadb3e6a01244dfa538 LICENSE
+SHA1 0b092735e425484dcffcdd1df1f20e9abb522215 MANIFEST
+SHA1 95d0cfc25b9ada32abbd5cdf1d36699f9639db08 MANIFEST.SKIP
+SHA1 66329b25648ac86c403bc6f1d62e8b119e79b9f1 META.json
+SHA1 490fc958a06fd2e980d6db36b5946e443bef8bc4 META.yml
+SHA1 9e7b4ca4bab3a0e0bc4813112317af3b5cb04ad0 Makefile.PL
+SHA1 ff42dae933dffbaba97d43f6650a8f121d5a1749 README
+SHA1 dfeda3c5d09d779de0d214b8999449a235e548a7 dist.ini
+SHA1 6f7cc4265bfe1d6b93856d4a013ad9cbf67222d8 java/RNGValidator.java
+SHA1 daa0cf7b1679264f8e68171f7f253255794773f7 java/jing.jar
+SHA1 0c78d8b872958d69714f67cfad48f6c33590561b lib/XML/Jing.pm
+SHA1 baec09cf126955ba77949fa0184dfdc9ded42995 t/0-use.t
+SHA1 8abb8002e24364a75b69a8c3f63edf52b8f921fb t/00-compile.t
+SHA1 4390f6985e53ac9be507195c367cec7fe580c105 t/000-report-versions-tiny.t
+SHA1 1e33ae04fbecde0ff56cebe50118a3c5a23d910e t/01-validates_xml.t
+SHA1 38a47b09d8715f01a310f2de1063dec520fc4dc2 t/02-exceptions.t
+SHA1 1380bdbba0dca881233c6537c97c2e76cd784871 t/data/BAD.rng
+SHA1 48f8ca356d0193b26464b8b27a5d8789bf154720 t/data/test.rng
+SHA1 7e85d93d8dbb5783abe6a1d185da1d5e808a5a90 t/data/testFAIL.xml
+SHA1 c72bf011a1e0426eba7ae463ad55fecda08d1c40 t/data/testPASS.xml
+SHA1 fd6f73b19c082d7405817f174c1961924788b1be t/perlcriticrc
+SHA1 87e17da37322fdeb3eb00983b2fe4e9f23c2e208 xt/author/critic.t
+SHA1 e19fd49041b4db6b30314607c5082b7014776bda xt/release/cpan-changes.t
+SHA1 b2f1893da5d0283e244ebe2fed6c44826aa37ac2 xt/release/dist-manifest.t
+SHA1 64f6a0bd2305a780d7e58d88b7e83cfd2fd286ad xt/release/distmeta.t
+SHA1 8c9330aafd553694bdf0c794b3ceb27e2edc7cdd xt/release/kwalitee.t
+SHA1 b3444f8f296b658e7aabe694b797e5d12e87b8dd xt/release/meta-json.t
+SHA1 683a1d75203e7cff035fe661287335358421a054 xt/release/minimum-version.t
+SHA1 ba30c412116467bcb4aae8404ba47d8591947365 xt/release/mojibake.t
+SHA1 cda2b3dc5f0abe7bb63e7cf404ac97a5914721fc xt/release/pod-coverage.t
+SHA1 08bb7f80db2cb4accf187f545e8aadf0d6f9f6c5 xt/release/pod-linkcheck.t
+SHA1 3f8ecc946495c515be964456f5861d01a69291ad xt/release/pod-syntax.t
+SHA1 5ddf4669d19b5fd9f2ae27407c9f194a5d764c32 xt/release/portability.t
+SHA1 e90425c7737288f93ce8ebe00f443efd1d10b085 xt/release/synopsis.t
+SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
+SHA1 9cf2361c95e3315da99e4bced64f5231b1ed4001 xt/release/unused-vars.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.17 (MingW32)
+
+iQEcBAEBAgAGBQJRkSUBAAoJEF8b+BZrlpb0cK0H+gNdZfC97oQJlz0HZ+EEqGq7
+tAhm5qL/eFrb7bWqFtjGYtha2C61Msp2iepumlZ1BcxY2/5PZvZZ2sju31WMH8nE
+q6vftyj+qj8l3Lfe+6NRG3YMHpSeQ8+u6hVo6aSieAdsxqz4h/lZuB1mDiPC3s5B
+0DYz1d2lERFdfaX+u4co2zT2OBfoj9pXnGGYPINMaFyEqtwYVT9tpaQ75OvR083r
+QOMc3KreJbnYwjfxC62Bx/gCp8ySj7LPA5+ihAVHDHGOgj/2zI0DGZzppSNVJ2Fr
+JIeFN98zJAwkeVlD8jKZf9nIilha/anc/ad/X4YZJNyODudE6wO8BquZF5KCkmo=
+=kX7+
+-----END PGP SIGNATURE-----

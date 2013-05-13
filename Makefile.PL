@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
   "NAME" => "XML::Jing",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "Config" => 0,
+    "Env::Path" => 0,
     "File::ShareDir" => 0,
     "Inline" => 0,
     "Inline::Java" => 0,
@@ -41,7 +41,7 @@ my %WriteMakefileArgs = (
     "Test::Exception" => 0,
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

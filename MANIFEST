@@ -3,13 +3,12 @@ Changes
 INSTALL
 LICENSE
 MANIFEST
+MANIFEST.SKIP
 META.json
 META.yml
 Makefile.PL
 README
-README.mkdn
-Unihan-Normalize.sublime-project
-Unihan-Normalize.sublime-workspace
+SIGNATURE
 dist.ini
 java/RNGValidator.java
 java/jing.jar
@@ -26,7 +25,9 @@ t/data/testPASS.xml
 t/perlcriticrc
 xt/author/critic.t
 xt/release/cpan-changes.t
+xt/release/dist-manifest.t
 xt/release/distmeta.t
+xt/release/kwalitee.t
 xt/release/meta-json.t
 xt/release/minimum-version.t
 xt/release/mojibake.t
@@ -34,5 +35,6 @@ xt/release/pod-coverage.t
 xt/release/pod-linkcheck.t
 xt/release/pod-syntax.t
 xt/release/portability.t
+xt/release/synopsis.t
 xt/release/test-version.t
 xt/release/unused-vars.t

@@ -13,15 +13,14 @@ use warnings;
 use Path::Tiny;
 use File::ShareDir 'dist_dir';
 use Carp;
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 #add the Jing jar to the system classpath
 BEGIN{
-	use Config;
-	my $separator = $Config{path_sep} || ':';
-	my $jar_location = path(dist_dir('XML-Jing'),'jing.jar');
-	$ENV{CLASSPATH} .= $separator . $jar_location;
+	use Env::Path;
+	my $classpath = Env::Path->CLASSPATH;
+	$classpath->Append(path(dist_dir('XML-Jing'),'jing.jar'));
 }
 
 require Inline;
@@ -80,7 +79,7 @@ XML::Jing - Validate XML files using an RNG schema using the Jing tool
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -97,10 +96,6 @@ version 0.01
 
 This module is a simple interface to Jing which allows checking XML files for validity using an RNG file.
 
-=head1 NAME
-
-XML::Jing- validate XML files against RNG using Jing
-
 =head1 METHODS
 
 =head2 C<new>
@@ -112,7 +107,7 @@ Creates a new instance of C<XML::Jing>.
 
 =head2 C<validate>
 
-Argument: path to the XML file to validate 
+Argument: path to the XML file to validate
 
 Returns: The first error found in the document, or C<undef> if no errors were found.
 

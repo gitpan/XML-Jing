@@ -18,14 +18,14 @@ my %module_build_args = (
     "Nathan Glenn <garfieldnate\@gmail.com>"
   ],
   "dist_name" => "XML-Jing",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "XML::Jing",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
     "Carp" => 0,
-    "Config" => 0,
+    "Env::Path" => 0,
     "File::ShareDir" => 0,
     "Inline" => 0,
     "Inline::Java" => 0,

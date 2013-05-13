@@ -25,10 +25,10 @@ no_index:
 provides:
   XML::Jing:
     file: lib/XML/Jing.pm
-    version: 0.01
+    version: 0.02
 requires:
   Carp: 0
-  Config: 0
+  Env::Path: 0
   File::ShareDir: 0
   Inline: 0
   Inline::Java: 0
@@ -41,11 +41,11 @@ resources:
   homepage: https://github.com/garfieldnate/XML-Jing
   license: http://dev.perl.org/licenses/
   repository: https://github.com/garfieldnate/XML-Jing.git
-version: 0.01
+version: 0.02
 x_BuiltWith:
   modules:
     Carp: 1.26
-    Config: NA(undef)
+    Env::Path: 0.18
     File::Find: 1.20
     File::ShareDir: 1.03
     File::ShareDir::Install: 0.04
@@ -55,8 +55,8 @@ x_BuiltWith:
     Inline::Java: 0.53
     Module::Build: 0.4002
     Path::Tiny: 0.015
-    Pod::Coverage::TrustPod: 'NA(possibly not installed)'
-    Test::CPAN::Meta: 'NA(possibly not installed)'
+    Pod::Coverage::TrustPod: 0.100002
+    Test::CPAN::Meta: 0.23
     Test::Exception: 0.31
     Test::More: 0.98
     Test::Pod: 1.45
@@ -98,6 +98,10 @@ x_Dist_Zilla:
       name: AutoPrereqs
       version: 4.300034
     -
+      class: Dist::Zilla::Plugin::GenerateFile
+      name: MANIFEST.SKIP
+      version: 4.300034
+    -
       class: Dist::Zilla::Plugin::ManifestSkip
       name: ManifestSkip
       version: 4.300034
@@ -113,6 +117,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::Test::Perl::Critic
       name: Test::Perl::Critic
       version: 2.112410
+    -
+      class: Dist::Zilla::Plugin::Test::DistManifest
+      name: Test::DistManifest
+      version: 2.000002
     -
       class: Dist::Zilla::Plugin::Test::Version
       name: Test::Version
@@ -146,6 +154,10 @@ x_Dist_Zilla:
       name: Test::Portability
       version: 2.000003
     -
+      class: Dist::Zilla::Plugin::Test::Synopsis
+      name: Test::Synopsis
+      version: 2.000002
+    -
       class: Dist::Zilla::Plugin::Test::UnusedVars
       name: Test::UnusedVars
       version: 2.000003
@@ -157,6 +169,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::Test::CPAN::Changes
       name: Test::CPAN::Changes
       version: 0.005
+    -
+      class: Dist::Zilla::Plugin::Test::Kwalitee
+      name: Test::Kwalitee
+      version: 2.03
     -
       class: Dist::Zilla::Plugin::Prepender
       name: Prepender
@@ -255,13 +271,17 @@ x_Dist_Zilla:
       name: ReadmeFromPod
       version: 0.18
     -
-      class: Dist::Zilla::Plugin::ReadmeMarkdownFromPod
-      name: ReadmeMarkdownFromPod
+      class: Dist::Zilla::Plugin::ReadmeAnyFromPod
+      name: ReadmeAnyFromPod
       version: 0.120120
     -
       class: Dist::Zilla::Plugin::InstallGuide
       name: InstallGuide
       version: 1.200000
+    -
+      class: Dist::Zilla::Plugin::Signature
+      name: Signature
+      version: 1.100930
     -
       class: Dist::Zilla::Plugin::Manifest
       name: Manifest
@@ -271,9 +291,9 @@ x_Dist_Zilla:
       name: CheckChangesHasContent
       version: 0.006
     -
-      class: Dist::Zilla::Plugin::RunExtraTests
-      name: RunExtraTests
-      version: 0.007
+      class: Dist::Zilla::Plugin::TestRelease
+      name: TestRelease
+      version: 4.300034
     -
       class: Dist::Zilla::Plugin::CheckPrereqsIndexed
       name: CheckPrereqsIndexed
@@ -283,6 +303,10 @@ x_Dist_Zilla:
       name: ConfirmRelease
       version: 4.300034
     -
+      class: Dist::Zilla::Plugin::RunExtraTests
+      name: RunExtraTests
+      version: 0.007
+    -
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: UploadToCPAN
       version: 4.300034
@@ -291,16 +315,12 @@ x_Dist_Zilla:
       name: ArchiveRelease
       version: 4.00
     -
-      class: Dist::Zilla::Plugin::Git::Check
-      name: Git::Check
-      version: 2.013
+      class: Dist::Zilla::Plugin::Clean
+      name: Clean
+      version: 0.07
     -
       class: Dist::Zilla::Plugin::Git::Commit
       name: Git::Commit
-      version: 2.013
-    -
-      class: Dist::Zilla::Plugin::Git::CommitBuild
-      name: Git::CommitBuild
       version: 2.013
     -
       class: Dist::Zilla::Plugin::Git::Tag
@@ -310,10 +330,6 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::Git::Push
       name: Git::Push
       version: 2.013
-    -
-      class: Dist::Zilla::Plugin::Clean
-      name: Clean
-      version: 0.07
     -
       class: Dist::Zilla::Plugin::ReportPhase
       name: Phase_Ends
