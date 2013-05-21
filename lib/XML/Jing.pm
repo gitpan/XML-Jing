@@ -13,7 +13,7 @@ use warnings;
 use Path::Tiny;
 use File::ShareDir 'dist_dir';
 use Carp;
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 #add the Jing jar to the system classpath
@@ -33,7 +33,7 @@ use Inline::Java qw(caught);
 
 sub new {
 	my ($class, $rng_path, $compact) = @_;
-	unless (-f $rng_path){
+	unless (-e $rng_path){
 		croak "File doesn't exist: $rng_path";
 	}
 	my $self = bless {}, $class;
@@ -44,7 +44,7 @@ sub new {
 	};
 	if ($@){
 		if (caught("org.xml.sax.SAXParseException")){
-			my $error = 'Error reading RNG file:' . $@->getMessage();
+			my $error = 'Error reading RNG file: ' . $@->getMessage();
 			#undef $@ so that the Inline::Java object is released (in case someone catches the croak)
 			undef $@;
 			croak $error;
@@ -61,10 +61,29 @@ sub new {
 
 sub validate {
 	my ($self, $xml_path) = @_;
-	unless (-f $xml_path){
+	unless (-e $xml_path){
 		croak "File doesn't exist: $xml_path";
 	}
-	return $self->{validator}->validate("$xml_path");
+
+	#validate the file, catching any errors
+	my $errors;
+	eval {
+		$errors = $self->{validator}->validate("$xml_path")
+	};
+	if($@){
+		if (caught("java.io.FileNotFoundException")){
+			my $error = 'Error reading file: ' . $@->getMessage();
+			#undef $@ so that the Inline::Java object is released (in case someone catches the croak)
+			undef $@;
+			croak $error;
+		}else{
+			warn 'croaking!';
+			my $error = $@;
+			undef $@;
+			croak $error;
+		}
+	}
+	return $errors;
 }
 
 1;
@@ -79,7 +98,7 @@ XML::Jing - Validate XML files using an RNG schema using the Jing tool
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

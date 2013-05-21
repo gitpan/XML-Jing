@@ -65,7 +65,7 @@
    "provides" : {
       "XML::Jing" : {
          "file" : "lib/XML/Jing.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -84,7 +84,7 @@
          "web" : "https://github.com/garfieldnate/XML-Jing"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_BuiltWith" : {
       "modules" : {
          "Carp" : "1.26",

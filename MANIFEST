@@ -20,6 +20,7 @@ t/01-validates_xml.t
 t/02-exceptions.t
 t/data/BAD.rng
 t/data/test.rng
+t/data/testBADDTD.xml
 t/data/testFAIL.xml
 t/data/testPASS.xml
 t/perlcriticrc
