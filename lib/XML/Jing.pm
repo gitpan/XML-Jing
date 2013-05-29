@@ -1,7 +1,7 @@
 #
 # This file is part of XML-Jing
 #
-# This software is copyright (c) 2013 by Nathan Glenn.
+# This software is copyright (c) 2013 by BYU Translation Research Group.
 #
 # This is free software; you can redistribute it and/or modify it under
 # the same terms as the Perl 5 programming language system itself.
@@ -13,7 +13,7 @@ use warnings;
 use Path::Tiny;
 use File::ShareDir 'dist_dir';
 use Carp;
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 
 #add the Jing jar to the system classpath
@@ -98,7 +98,7 @@ XML::Jing - Validate XML files using an RNG schema using the Jing tool
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -148,7 +148,7 @@ Nathan Glenn <garfieldnate@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Nathan Glenn.
+This software is copyright (c) 2013 by BYU Translation Research Group.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

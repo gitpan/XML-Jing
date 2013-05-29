@@ -65,7 +65,7 @@
    "provides" : {
       "XML::Jing" : {
          "file" : "lib/XML/Jing.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -74,17 +74,17 @@
          "mailto" : "bug-xml-jing at rt.cpan.org",
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=XML-Jing"
       },
-      "homepage" : "https://github.com/garfieldnate/XML-Jing",
+      "homepage" : "https://github.com/byutrg/XML-Jing",
       "license" : [
          "http://dev.perl.org/licenses/"
       ],
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/garfieldnate/XML-Jing.git",
-         "web" : "https://github.com/garfieldnate/XML-Jing"
+         "url" : "https://github.com/byutrg/XML-Jing.git",
+         "web" : "https://github.com/byutrg/XML-Jing"
       }
    },
-   "version" : "0.03",
+   "version" : "0.04",
    "x_BuiltWith" : {
       "modules" : {
          "Carp" : "1.26",

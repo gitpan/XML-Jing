@@ -14,22 +14,22 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 5da00e08a94c547f87d45bdc13c5e56decf0fdc5 Build.PL
-SHA1 47a363975769485d9ad7b3cad5277560d9dd19f6 Changes
+SHA1 1de3a52dc763b5491a5a0a5aa6f1e3417c31bb39 Build.PL
+SHA1 de9eb4df09c44b0265f939aebf89b99985a89b4e Changes
 SHA1 82e2a8ca991a452e14f1a44adb86efe52c29f7de INSTALL
-SHA1 4d7a909a641aef78cab40eadb3e6a01244dfa538 LICENSE
+SHA1 027d5ec1fd50feaff2d4d2c1fc0ab4040f1047e1 LICENSE
 SHA1 b5c7cd10a53939d901ad60d089e4ec0000faa55f MANIFEST
 SHA1 95d0cfc25b9ada32abbd5cdf1d36699f9639db08 MANIFEST.SKIP
-SHA1 6e583e56295d358690b9ffe897146afa965568d4 META.json
-SHA1 78ecc0761dbde97697e1c58c3e6279c28531018f META.yml
-SHA1 dd0b75df5ff155d4207c3fa9dc6632b35c35020a Makefile.PL
-SHA1 55a724b9ea522b009cca9e2e5dddc46906e2c214 README
-SHA1 dfeda3c5d09d779de0d214b8999449a235e548a7 dist.ini
+SHA1 733c2af7b7dfcf2dbc9f2e1edb3df01bfd8ceedf META.json
+SHA1 3ac75c9dd78bddb6143c3066cdd20c69fed6d8a6 META.yml
+SHA1 e4e0075e5008d559ab85f4b8b8a3edc7ca76c3f2 Makefile.PL
+SHA1 d98aaa10f2fc3838cf67e57668bd2d62ed1586c2 README
+SHA1 3de17cebd53fb95c3fc52914607810194a99a87a dist.ini
 SHA1 6f7cc4265bfe1d6b93856d4a013ad9cbf67222d8 java/RNGValidator.java
 SHA1 daa0cf7b1679264f8e68171f7f253255794773f7 java/jing.jar
-SHA1 93376de9fb0e55b32c07d8144baf433f7c55e7a7 lib/XML/Jing.pm
+SHA1 b242740eb1a8513e85c565d83d3b892284a7960b lib/XML/Jing.pm
 SHA1 baec09cf126955ba77949fa0184dfdc9ded42995 t/0-use.t
-SHA1 8abb8002e24364a75b69a8c3f63edf52b8f921fb t/00-compile.t
+SHA1 b7bad76678644929f16eee1f46a8cb766586a896 t/00-compile.t
 SHA1 4390f6985e53ac9be507195c367cec7fe580c105 t/000-report-versions-tiny.t
 SHA1 1e33ae04fbecde0ff56cebe50118a3c5a23d910e t/01-validates_xml.t
 SHA1 353bb4d7a8383721e7cda3b3819d815a875f6522 t/02-exceptions.t
@@ -39,29 +39,29 @@ SHA1 623e3f37306e5d665aa12aabddd0c8e9636c7ecb t/data/testBADDTD.xml
 SHA1 7e85d93d8dbb5783abe6a1d185da1d5e808a5a90 t/data/testFAIL.xml
 SHA1 c72bf011a1e0426eba7ae463ad55fecda08d1c40 t/data/testPASS.xml
 SHA1 fd6f73b19c082d7405817f174c1961924788b1be t/perlcriticrc
-SHA1 87e17da37322fdeb3eb00983b2fe4e9f23c2e208 xt/author/critic.t
-SHA1 e19fd49041b4db6b30314607c5082b7014776bda xt/release/cpan-changes.t
-SHA1 b2f1893da5d0283e244ebe2fed6c44826aa37ac2 xt/release/dist-manifest.t
-SHA1 64f6a0bd2305a780d7e58d88b7e83cfd2fd286ad xt/release/distmeta.t
-SHA1 8c9330aafd553694bdf0c794b3ceb27e2edc7cdd xt/release/kwalitee.t
-SHA1 b3444f8f296b658e7aabe694b797e5d12e87b8dd xt/release/meta-json.t
-SHA1 683a1d75203e7cff035fe661287335358421a054 xt/release/minimum-version.t
-SHA1 ba30c412116467bcb4aae8404ba47d8591947365 xt/release/mojibake.t
-SHA1 cda2b3dc5f0abe7bb63e7cf404ac97a5914721fc xt/release/pod-coverage.t
-SHA1 08bb7f80db2cb4accf187f545e8aadf0d6f9f6c5 xt/release/pod-linkcheck.t
-SHA1 3f8ecc946495c515be964456f5861d01a69291ad xt/release/pod-syntax.t
-SHA1 5ddf4669d19b5fd9f2ae27407c9f194a5d764c32 xt/release/portability.t
-SHA1 e90425c7737288f93ce8ebe00f443efd1d10b085 xt/release/synopsis.t
+SHA1 228171ddc7e555655f57f5c853786540b2de7604 xt/author/critic.t
+SHA1 eb799bf37d655480184b267cdcf0099825c8779f xt/release/cpan-changes.t
+SHA1 e8d94cb5cd7258cef8e30950a8abb3cc591b7ead xt/release/dist-manifest.t
+SHA1 0be90f606145cce08ab5b5787ccd08747939314a xt/release/distmeta.t
+SHA1 5b36530ca606b0f5e105392a9472d6c1f9274b93 xt/release/kwalitee.t
+SHA1 8b8e9dae8d4c24ddf3f61f9674308c1839e6d086 xt/release/meta-json.t
+SHA1 9b1414a70a2d955dedb3647ebde5c74c3c6543e2 xt/release/minimum-version.t
+SHA1 fc6de5364c378e8cdd51e9f69fe713c94880817a xt/release/mojibake.t
+SHA1 5e9af4c9f89233a7f924554e49f85e91a1c0d85c xt/release/pod-coverage.t
+SHA1 39770b5f2da07052635a507beab42c1a0e80115c xt/release/pod-linkcheck.t
+SHA1 26217cdb154e4fe1fd353c8b22edf5b6ac25c8b7 xt/release/pod-syntax.t
+SHA1 9722f3b1dbf98fc86412281ab024374674a38c14 xt/release/portability.t
+SHA1 ab48494ebeb777d7aba93dadbb44a302807a610a xt/release/synopsis.t
 SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
-SHA1 9cf2361c95e3315da99e4bced64f5231b1ed4001 xt/release/unused-vars.t
+SHA1 81b332336b1145854e2c7729cd6a6e205f0df2fe xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2.0.17 (MingW32)
 
-iQEcBAEBAgAGBQJRm/bZAAoJEF8b+BZrlpb09WQH/0Ax+l8y/ycsX+lLnR3lLsuY
-xYK8nzJLcr0keBWsTDrlWkNotO+1j4MTQKuVm6NYJcXCY67nPRKb5Dzw9FoOe+7z
-+rw+9IjEd3dQ4e7Kx4FDBWq5FqoRl6zRRUwfviPsnWto7FYac4LXqML5mGv0x9YF
-MH0uAuYfeDPtG5sFnys21TbsptshXT+DSyNxW17wo3CsGV7BunQEmkBXN/M0cpyE
-eT5GGPtXpiiCzym7kDFY6tk8fhIW/I/haMQ4cv/oe4/+mSM9DTl2Y1sAnWDWxg6h
-6uToG/DQLou83dA3n1IfuSTbpexeqQ2maQeL6Y50t+cMvkCKG5P/m9donm3FoJc=
-=bNRI
+iQEcBAEBAgAGBQJRpWT/AAoJEF8b+BZrlpb0uMkH/jr7bmvFEKyw45mhg60drm4T
+e+2CdG1yr/4pLR7SmxSX9qG2U9vrRjrk+1MLUNwr7bAzMXNNB3TaWcp3IJwHTMp8
+pjhLMrMpnXWEeVEufm1VyI+NRRePNPOf+m/c9M+z/v3psB51a88LRF85a+Vox8X3
+Hr1+Zl/TxOShe8cuQCotMRO7t7Ng/mcE1hED+pRfVFfQH9S6Y/8+xboSZvDQuqyH
+zV9M/BfkddVhKeSr5G6cNW54Fvd9LGZ8saxTDPSc948ar0T5m3227wrhxgEVldzG
+3EtdydZpAhSyoVFHbSavL5SrX3XH1WknoDfshT0oCOPSh1EtN05Ur8fv9eVEKMY=
+=Uj8s
 -----END PGP SIGNATURE-----

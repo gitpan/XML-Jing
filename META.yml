@@ -25,7 +25,7 @@ no_index:
 provides:
   XML::Jing:
     file: lib/XML/Jing.pm
-    version: 0.03
+    version: 0.04
 requires:
   Carp: 0
   Env::Path: 0
@@ -38,10 +38,10 @@ requires:
   warnings: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=XML-Jing
-  homepage: https://github.com/garfieldnate/XML-Jing
+  homepage: https://github.com/byutrg/XML-Jing
   license: http://dev.perl.org/licenses/
-  repository: https://github.com/garfieldnate/XML-Jing.git
-version: 0.03
+  repository: https://github.com/byutrg/XML-Jing.git
+version: 0.04
 x_BuiltWith:
   modules:
     Carp: 1.26
